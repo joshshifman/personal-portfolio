@@ -1,0 +1,28 @@
+
+
+.jumbotron{
+
+	/*height: 500px;*/
+
+	position: relative;
+  	z-index:-101;
+}
+
+#video-background { 
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width:100%;
+    opacity: 1;
+}
+
+.jumbotron h1{
+	color: #FFFFFF;
+	text-shadow: black 0.05em  0.05em 0.05em;
+}
+
+
