@@ -1,11 +1,40 @@
 {%extends "templates/base.html" %}
 {% block content %}
-	<div class"home">
+
+
+	<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+
+	<script type=text/Javascript>
+
+	$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+	});
+	</script>
+
+
+	<!-- <div class"home">
 		<div class="jumbotron">
-			<div class="container">
+			<div class="container animated fadeInUp">
 				<h1>Hello, It's Me</h1>
 			</div>
 		</div>
-	</div>
+	</div> -->
+
+<section class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/GUEZCxBcM78?t=4',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1>Josh Shifman</h1>  
+        <h3>Idk other text that goes on the bottom</h3>
+	   </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
 
