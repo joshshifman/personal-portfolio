@@ -20,17 +20,47 @@
 
 	<link rel="stylesheet" type="text/css" href="static/animate.css">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link rel="stylesheet" type="text/css" href="static/about.css">
 
 </head>
 <body>
 	<header>
 
 	</header>
+
+	<nav class="navbar navbar-fixed-right navbar-minimal animate" role="navigation">
+		<div class="navbar-toggler animate">
+			<span class="menu-icon"></span>
+		</div>
+		<ul class="navbar-menu animate">
+			<li>
+				<a href="about.html" class="animate">
+					<span class="desc animate">Home</span>
+					<span class="glyphicon glyphicon-home"></span>
+				</a>
+			</li>
+			<li>
+				<a href="projects.html" class="animate">
+					<span class="desc animate">Projects</span>
+					<span class="glyphicon glyphicon-equalizer"></span>
+				</a>
+			</li>
+		</ul>
+
+	</nav>
+
+
+
+
+
+
+
 	{% block content %}
 	I should never see this content.  It should be replaced.
 	{% endblock %}
 	<footer>
-		<p>Copyright &cop y; Josh Shifman.</p>
+		<p>Copyright &copy; Josh Shifman.</p>
+		<a href="about.html">About</a>
 	</footer>
 	
 </body>
