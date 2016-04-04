@@ -23,6 +23,12 @@
     font-size: 2.5vmin;
 }
 
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a{
+        font-size: 18pt;
+    }
+}
+
 .jumbotron{
     height: 100vh;
 }
@@ -98,4 +104,12 @@ footer{
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        padding-left: 100px;
 
+    }
+    
+}

@@ -45,5 +45,6 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/index.html', MainHandler),
     ('/about.html', MainHandler),
-    ('/projects.html', MainHandler)
+    ('/projects.html', MainHandler),
+    ('/contact.html', MainHandler)
 ], debug=True)
