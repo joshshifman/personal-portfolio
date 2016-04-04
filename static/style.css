@@ -78,6 +78,12 @@ body{
 i{
     color: #444;
 }
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
 
 .navbar-text{
     text-align: left;
@@ -87,6 +93,9 @@ i{
     font-family: "FF Scala";
 }
 
-
+.here{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 

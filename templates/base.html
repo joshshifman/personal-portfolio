@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="static/animate.css">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<link rel="stylesheet" type="text/css" href="static/about.css">
+	<link rel="stylesheet" type="text/css" href="static/projects.css">
 
 </head>
 <body>
@@ -46,10 +47,16 @@
 
       	<nav class="navbar-collapse collapse">
 	        <ul class="nav navbar-nav navbar-right">
-	        		<li><a href="/">Home</a></li>
-		          	<li><a href="about.html">About me</a></li>
-		          	<li><a href="project.html">Projects</a></li>
-		          	<li><a href="/contact">Contact</a></li>
+	        		<li><a href="/" {% if index %} class ="here" {% endif %}>
+	        		Home
+	        		</a></li>
+		          	<li><a href="about.html" {% if about %} class ="here" {% endif %}>About me
+		          	</a></li>
+		          	<li><a href="projects.html" {% if projects %} class ="here" {% endif %}>Projects
+		          	</a></li>
+		          	<li><a href="/contact" {% if contact %} class ="here" {% endif %}>
+		          	Contact
+		          	</a></li>
 	        </ul>
       </nav>
 	</div>

@@ -28,18 +28,22 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-    	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-        self.response.write(template.render())
+    	path = self.request.path
+        if path == '/':
+            path += 'index.html'
 
-class AboutHandler(webapp2.RequestHandler):
-    def get(self):
+        logging.info('templates' + path)
+        template = JINJA_ENVIRONMENT.get_template('templates' + path)
 
-    	template = JINJA_ENVIRONMENT.get_template('templates/about.html')
-        self.response.write(template.render())
+        path = path[1:-5]
+        infoDict = {path : True}
+
+        self.response.write(template.render(infoDict))
 
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/index.html', MainHandler),
-    ('/about.html', AboutHandler)
+    ('/about.html', MainHandler),
+    ('/projects.html', MainHandler)
 ], debug=True)

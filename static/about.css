@@ -16,8 +16,12 @@
 	margin: 25px auto 25px auto;
 }
 
+aside{
+	margin: 25px auto 25px auto;	
+}
 
-.about p, h1, h2, h3, li{
+
+.about p, h1, h2, h3, li, aside{
 	/*font-family: "Times New Roman", Times, serif;*/
 	font-family: "FF Scala";
 }
